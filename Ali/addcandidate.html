@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Add Candidate</title>
+    <style>
+    .whole{
+        background-color:rgb(39, 4, 65);
+       
+    }
+    .nav{
+        overflow:hidden;
+        background-color: #333;
+    }
+   
+    .nav a{
+        float: right;
+        color: #f2f2f2;
+        text-align: center;
+        padding:  16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .nav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    a:hover{
+        text-decoration: underline;
+
+    }  
+    .title{
+        position: relative;
+        
+        font-size: 1000%;
+        font-style: oblique;
+        text-align: center;
+        margin-top: 10%;
+        transition: 0.5s;
+
+    } 
+    .title:hover{
+        color:  rgb(241, 7, 7);       
+        pointer-events:visible;       
+
+    }
+    .container{
+        box-sizing: border-box;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        max-width: 350px;
+        width: 100%;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.3);  
+        background-color:whitesmoke;
+    }
+    #ac{
+        font-family:'Poppins', sans-serif;
+        position: relative;
+        padding-left: 25%;
+        padding-top: 8%;
+        font-size: 20px;     
+        }
+        #aname{
+            padding: 10px 50px 10px 50px;
+            margin-left: 22px;
+            border-radius: 7px;
+        }
+        #pname{
+            padding: 10px 50px 10px 50px;
+            margin-left: 22px;
+            border-radius: 7px;
+        }
+        #cname{
+            padding: 10px 50px 10px 50px;
+            margin-left: 50px;
+            border-radius: 15px;
+        }
+        #fname{
+            padding: 10px 5px 10px 10px;
+            border-style:solid;
+            margin-left: 22px;
+            border-radius: 7px;
+        }
+        #add{
+            position: relative;
+            padding: 10px 50px 10px 50px;
+            margin-left: 25%;  
+            background-color: white; 
+            transition: 0.3s;
+            font-size: 15px;
+        }
+        #add:hover{
+            background-color:cyan;
+            color: black;
+            
+        }
+        #photo{
+        position: relative;
+        padding-left: 25%;       
+        font-size: 15px;
+        }
+        #vname{
+            padding: 10px 5px 10px 10px;
+            border-style:solid;
+            margin-left: 22px;
+            border-radius: 7px;
+        }
+        #vid{
+            margin-left: 25%;
+        }
+        .nav a.addc{
+            border-bottom: 3px solid whitesmoke;
+        }
+
+    </style>
+</head>
+<body class="whole">
+        <div class="nav">
+        <a href="homepage.html">LOG OUT</a>
+        <a href="voting">VOTING</a>
+        <a href="viewpublic.html">VIEW PUBLIC</a>
+        <a href="viewcandidate.html">VIEW CANDIDATE</a>
+        <a class="addc"href="addcandidate.html">ADD CANDIDATE</a>
+    </div>
+    <div class="container" >
+       <div id="ac"><b>ADD CANDIDATE</b></div><br>
+    
+    <div class="adname">
+        <input type="text" name="aname" id="aname"placeholder="ENTER CANDIDATE NAME"><br><br>
+        <div><input type="text" name="pname" id="pname" placeholder="ENTER THE PARTY NAME"></div><br>
+        <div><select name="city" id="cname"><br><br>
+            <option value="select">SELECT</option>
+            <option value="tanjore">TANJORE</option>
+            <option value="trichy">TRICHY</option>
+            <option value="chennai">CHENNAI</option>
+            <option value="coimbatore">COIMBATORE</option>
+        </select></div><br>
+        <div id="photo"> <label for="fname">Upload  Your Photo</label></div>
+         <div><input type="file" name="fname" id="fname">
+        </div><br>
+        <div id="vid"> <label for="vname">Upload  Your Voter ID</label></div>
+        <div><input type="file" name="vname" id="vname">
+       </div><br>
+        <div><button type="submit" id="add"><B>ADD</B></button></div><br><br>        
+    </div>
+    </div>
+   
+    <script src="js/jquery.min.js"></script>   
+        <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type='text/css' href="{{url_for('static', filename='css/viewpublic.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>ADMIN PAGE</title>
+</head>
+        <body class="whole">
+        <form method="post">
+            <div class="nav justify-content-end">
+            <a href="{{url_for('addcandidate')}}">ADD CANDIDATE</a>
+            <a href="{{url_for('viewcandidate')}}">VIEW CANDIDATE</a>
+            <a class="viewp" href="{{url_for('viewpublic')}}">VIEW PUBLIC</a>
+            <a href="{{url_for('voting')}}">VOTING</a>
+            <a href="{{url_for('logout')}}">LOG OUT</a>
+        </div>
+        <div class="tables table-responsive">
+            <table class="table table-striped" >
+                 <tr class="trow">
+                    <th>S.NO</th>
+                    <th>AADHAR NUMBER</th>
+                    <th>NAME</th>
+                    <th>AGE</th>
+                    <th>PHONE NUMBER</th>
+                       <th>PASSWORD</th>
+                    <th>AADHAR CARD</th>
+                     <th>STATUS</th>
+                    <th>APPROVE/REJECT</th>
+                </tr>
+             {% for i in msg %}
+            {%set id=i["id"]%}
+    {%set aadharno=i["aadharno"]%}
+    {%set username=i["username"] %}
+    {%set age=i["age"] %}
+    {%set phoneno=i["phoneno"] %}
+    {%set password=i["password"] %}
+    {%set file=i["file"] %}
+            {%set status=i["status"]%}
+
+      <tr>
+          <td>{{id}}</td>
+          <td>{{aadharno}}</td>
+                       <td>{{username}}</td>
+                       <td>{{age}}</td>
+                       <td>{{phoneno}}</td>
+                       <td>{{password}}</td>
+                       <td><img src='{{ url_for("imgdisplay_image", filename = file)}}'width="150" height="100"></td>
+                        <td>{{status}}</td>
+          <td><a href="{{url_for('approved',idn=id)}}">approve</a></td>
+          <td><a href="{{url_for('rejected',idn=id)}}">rejected</a></td>
+      </tr>
+
+    {% endfor %}
+             </table>
+
+        </div>
+            </form>
+        </body>
+        </html>

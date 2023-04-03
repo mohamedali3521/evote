@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type='text/css' href="{{url_for('static', filename='css/homepage.css')}}">
+    <link rel="stylesheet" href="/static/css/homepage.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>HOME PAGE</title>
+</head>
+<body class="whole">
+    <div class="nav justify-content-end">
+            <a href=" # " class="home">HOME</a>
+            <a href="{{url_for('logreg')}}">USER</a>
+            <a href="{{url_for('adminlogin')}}">ADMIN</a>
+    </div>
+    <div class="para text-center ">
+        <p >
+            Online voting in India is not yet officially implemented by the Election Commission of India (ECI).The ECI has been exploring the possibility of using electronic voting machines (EVMs) and has
+            conducted trials, but a nationwide implementation is yet to happen. The concerns around security and fairness of online voting are still being addressed. Online voting tools and online election voting systems help you make important decisions by gathering the input of your group in a way that’s systematic and verifiable.
+            Oftentimes, these decisions are made on a yearly basis - during an event (e.g. your organization’s AGM) or at a particular time of the year. Or you might run ongoing polls amongst your group (e.g. anonymous employee feedback surveys).<br><br>It’s a good idea to use an online voting system to:  Elect your leadership: A board of directors election is a good example, where there are multiple positions (e.g. chair, vice president, secretary, treasurer). All of which may include supporting documentation (e.g. biographies, resumés, headshots). Admit new members to your group. This helps you stick to a regular, fair process of evaluation and lets candidates know what to expect. Gather anonymous feedback from your employees. Managers (and managers of managers) want to know how their employees truly feel about their jobs and work life. Using an online voting system with a capacity for secret balloting helps employees express their true feelings, by understanding and trusting that their feedback will be heard, but not tied directly to them.
+            Vote on yearly budgets. And since adjustments to your budget are often needed, an online voting system will keep voting secure and accessible - no matter where the members of your group may happen to be. Alter your operational procedures and bylaws. Just like leadership elections, expect group members to react strongly toward changes - no matter how minor - to organizational processes. You’ll want to collect individual responses to these changes in a systematic manner. <br><br> India has been exploring the possibilities of implementing a remote voting system through technologies such as blockchain since the past few years. The Election Commission has taken up this idea with enthusiasm, and has been working towards initiatives that could bring a blockchain-based remote voting system to reality. In this light, it would be interesting to explore a case for conducting elections over a blockchain system—whose theoretical underpinnings ensure a transparent and accountable record of data. However, as we explore the various implications that arise out of adopting such a technology, it would be imperative to understand its underpinnings (technical and theoretical) in order to assess its viability for the greater good of the electoral system in India.
+        
+        </p>
+    </div>
+        <div class="homeside">
+        <img src="{{url_for('static', filename='css/images/homeside.png')}}" id="homeside" alt="homeside">
+        </div>
+        <div class="phone">                
+        <img src="{{url_for('static', filename='css/images/phone.jpg')}}"  id="phone" alt="phone">
+        </div>
+    
+
+    
+</body>
+</html>

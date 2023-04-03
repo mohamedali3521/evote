@@ -1,0 +1,15 @@
+body{
+    background-image: url(images/green.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tables{
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 20px;
+    border:2px rgb(14, 13, 13);
+    /* border-style: groove; */
+}
+.sub{
+    text-align: center;
+}

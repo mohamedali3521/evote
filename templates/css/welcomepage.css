@@ -1,0 +1,22 @@
+body{
+            background-image: url(images/ulbg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        #wel{
+            font-size: xx-large;
+            font-weight: bolder;
+            margin-top: 30px;
+        }
+
+        #instruct{
+            margin-left: 43%;
+            margin-top: 6%;
+        }
+        #caption{
+            text-align:justify;
+            margin-left: 26%;
+            font-family: 'Times New Roman', Times, serif;
+            font-size:larger;
+        }

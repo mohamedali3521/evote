@@ -1,0 +1,13 @@
+body{
+    background-image: url(/images/ulbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:monospace;
+
+}
+.thanks{
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 20%;
+    font-size: xx-large;
+}

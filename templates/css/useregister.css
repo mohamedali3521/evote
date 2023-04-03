@@ -1,0 +1,118 @@
+body{
+    background-image: url(/images/urbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 350px;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    line-height: 40px;
+}
+
+#aadhar{
+    height: 50px;
+    width: 50%;
+    padding-left: 60px;
+    padding-right: 88px;
+    font-size: 18.5px;
+    margin-left: 10px;
+    margin-right: 10%;
+    margin-bottom: 1.3rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+#name{
+    height: 50px;
+    width: 50%;
+    padding-left: 60px;
+    padding-right: 88px;
+    font-size: 18.5px;
+    margin-left: 10px;
+    margin-right: 10%;
+    margin-bottom: 1.3rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+#phone{
+    height: 50px;
+    width: 50%;
+    padding-left: 60px;
+    padding-right: 88px;
+    font-size: 18.5px;
+    margin-left: 10px;
+    margin-right: 10%;
+    margin-bottom: 1.3rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+#pwd{
+    height: 50px;
+    width: 50%;
+    padding-left: 60px;
+    padding-right: 88px;
+    font-size: 18.5px;
+    margin-left: 10px;
+    margin-right: 10%;
+    margin-bottom: 1.3rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+#aname{
+    padding: 10px 20px 10px 10px;
+    border: 2px solid #ddd;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 6px;
+}
+#date{
+    height: 50px;
+    width: 50%;
+    padding-left: 60px;
+    padding-right: 88px;
+    font-size: 18.5px;
+    margin-left: 10px;
+    margin-right: 10%;
+    margin-bottom: 1.3rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+.button{
+    color: #fff;
+    background: #009579;
+    font-size: 1rem;
+    height: 50px;
+    width: 50%;  
+    letter-spacing: 1px;
+    margin-top: -2rem;
+    cursor: pointer;
+    transition: 0.9s;
+    margin-left: 10px;
+    margin-right: 100%;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 225px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 650;
+    border-style: hidden;
+}
+#submit
+{
+    padding-top: 4px;
+}
+#submit:active
+{
+    padding-top: 6px;
+}
+.button:hover{
+    background-color: brown;
+}

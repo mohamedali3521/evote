@@ -1,0 +1,35 @@
+.whole{
+    background-image: url(images/green.webp);
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+.ui{
+    position: fixed;
+   margin-left: 40%;
+   margin-top: -5%;
+}
+.ri{
+    position: fixed;
+    margin-left: 55%;
+    margin-top: -5%;
+   
+             
+}
+#log{
+    margin-left: 545px;  
+    margin-top: 25%;          
+}
+#log a{
+    text-decoration: none;
+    color: brown;
+}
+#reg a{
+    text-decoration: none;
+    color: brown;
+}
+#reg{
+    margin-left: 728px;
+    margin-top: -35px;
+}

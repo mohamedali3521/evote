@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type='text/css' href="{{url_for('static', filename='css/useregister.css')}}">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="{{url_for('static', filename='js/useregister.js')}}"></script>
+    <title>User registration form</title>
+</head>
+<body>
+    <div class="con">
+        <header><center><b>Register</b></center></header>
+        <form method="POST" name="regi" enctype="multipart/form-data">
+          <input type="text" id="aadhar" placeholder="Enter your aadhar no" maxlength="12" minlength="12" name="aadharno">
+          <input type="text" id="name" placeholder="Enter your name " name="username" required>
+          <input type="text" id="date" name="age" placeholder="Enter your age" required>
+          <div class="cname">
+            <select name="city" id="cname" required>
+                <option value="city">CITY</option>
+                <option value="TANJORE">TANJORE</option>
+                <option value="TRICHY">TRICHY</option>
+                <option value="CHENNAI">CHENNAI</option>
+                <option value="COIMBATORE">COIMBATORE</option>
+            </select>
+          </div>
+          <div class="phone">
+          <input type="tel" id="phone" placeholder="Enter your phone No" maxlength="10" minlength="10" name="phoneno" required></div>
+          <input type="password" id="pwd" placeholder="Create your password" minlength="8" maxlength="16" name="password" required>
+          <div id="vid"> <label for="aname"><center><b>Upload Your Aadhar Card</b></center></label></div>
+          <div><input type="file" name="file" id="aname" required>
+         </div><br>
+          <input type="submit" id="submit" class="button" name="subm" onclick="registration()" value="   Register">
+        </form>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

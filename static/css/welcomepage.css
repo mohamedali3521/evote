@@ -1,0 +1,38 @@
+body{
+    background-image: url(images/green.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#wel{
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+.type{
+    text-align: center;
+    margin-top: 15%;
+}
+#etype{
+    border-radius: 20px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sub{
+    text-align: center;
+    margin-top: 90px;
+    
+}
+#sub{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:antiquewhite;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#sub:hover{
+    background-color: rgb(0, 247, 255);
+    
+}

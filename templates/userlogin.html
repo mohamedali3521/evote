@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!---Coding By CoderGirl | www.codinglabweb.com--->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--<title>Login & Registration Form | CoderGirl</title>-->
+  <!---Custom CSS File--->
+  <link rel="stylesheet" type='text/css' href="{{url_for('static', filename='css/userlogin.css')}}">
+  <link rel="stylesheet" type='text/css' href="/static/css/userlogin.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="{{url_for('static', filename='js/userlogin.js')}}"></script>
+  </head>
+<body>
+  <div class="con">
+    <div class="login form">
+      <header><b>Login</b></header>
+      <form method="POST" name="login">
+        {{msg}}
+        <input type="text" placeholder="Enter your AadharNo" name="aadharno" maxlength="12" minlength="12">
+        <input type="password" placeholder="Enter your password" name="pwd">
+        <input type="submit" class="button" value="Login" onclick="uservalidation()">
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
+
