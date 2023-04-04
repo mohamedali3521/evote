@@ -272,7 +272,7 @@ def usermodule(idn, user):
     cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
     print(idn)
     status = 'VOTED'
-    cursor.execute("UPDATE addcandidate SET vote=vote+1 WHERE id=%s ", idn)
+    cursor.execute("UPDATE addcandidate SET vote=vote+1 WHERE id=%s ", [idn])
     cursor.execute("UPDATE register SET status=%s WHERE username=%s ", (status, user))
     mysql.connection.commit()
     cursor.close()
